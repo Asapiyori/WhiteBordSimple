@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <title>StayHomeBoard</title>
+    <!-- viewportの幅は端末やブラウザに依存させる。 -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- script要素のsrc属性は、ドキュメントに埋め込む外部スクリプト・ファイルのURLを指定する属性。 -->
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <!-- もの凄く便利なCDNサービス「unpkg」（ NPMに登録されている膨大なパッケージをCDNとして利用することが出来る） -->
     <script
       crossorigin
       src="https://unpkg.com/react@16/umd/react.development.js"
@@ -18,6 +21,7 @@
       crossorigin
       src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"
     ></script>
+    <!-- ブラウザはこれをただのデータフラグメントとして扱い、記述されたコードは無視します。babelのランタイムトランスパイラはこれ(text/babelを指定したscriptタグなど)をテキストとして読み込み、パース、トランスパイル、実行をしてくれます。これによってscriptタグ内にJSコードを書くのと同様に実行できる。 -->
     <script type="text/babel">
       var firebaseConfig = {
         apiKey: "AIzaSyCt8XUATCMdVecltU8ua93JFLzOd5DMdMI",
